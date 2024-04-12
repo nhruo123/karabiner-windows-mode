@@ -270,5 +270,9 @@ local k = import 'lib/karabiner.libsonnet';
            k.input('f5'),
            k.outputKey('r', ['command']),
            k.condition('if', ['^com\\.google\\.Chrome$'])),
+    k.rule('F12 [Only Chrome]',
+           k.input('f12'),
+           k.outputKey('i', ['control', 'option']),
+           k.condition('if', ['^com\\.google\\.Chrome$'])),
   ],
 }
