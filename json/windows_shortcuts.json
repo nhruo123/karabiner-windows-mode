@@ -3043,39 +3043,6 @@
                "type": "basic"
             }
          ]
-      },
-      {
-         "description": "F12 [Only Chrome]",
-         "manipulators": [
-            {
-               "conditions": [
-                  {
-                     "bundle_identifiers": [
-                        "^com\\.google\\.Chrome$"
-                     ],
-                     "type": "frontmost_application_if"
-                  }
-               ],
-               "from": {
-                  "key_code": "f12",
-                  "modifiers": {
-                     "optional": [
-                        "any"
-                     ]
-                  }
-               },
-               "to": [
-                  {
-                     "key_code": "i",
-                     "modifiers": [
-                        "control",
-                        "option"
-                     ]
-                  }
-               ],
-               "type": "basic"
-            }
-         ]
       }
    ],
    "title": "Windows Shortcuts"
