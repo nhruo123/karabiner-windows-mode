@@ -98,9 +98,9 @@ local k = import 'lib/karabiner.libsonnet';
            k.condition('unless', bundle.standard, file_paths.standard)),
     // Modifier Keys
     k.rule('Win [Open Spotlight]',
-           k.input('left_command', key_is_modifier=true),
+           k.input('left_option', key_is_modifier=true),
            [
-             k.outputKey('left_command', output_type='to'),
+             k.outputKey('left_option', output_type='to'),
              k.outputKey('spotlight', output_type='to_if_alone', key_code='apple_vendor_keyboard_key_code'),
            ]),
     // Alphanumeric Keys
